@@ -1,0 +1,27 @@
+.aboutus {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+}
+.about p {
+  text-align: justify;
+  margin: 0 auto; /* Wyśrodkowuje tekst w kontenerze */
+  max-width: 79%; /* Zapobiega przekraczaniu szerokości ekranu */
+  box-sizing: border-box; /* Uwzględnia padding w szerokości */
+  padding: 0 20px; /* Dodaje trochę wewnętrznego marginesu po bokach */
+}
+.h2-aboutus {
+  text-align: center;
+  /* width: 100%; */
+}
+
+.about {
+  margin-top: 20px;
+  /* padding: 10px; */
+}
+
+.about ul {
+  margin-top: 0px;
+  padding: 5px 20px;
+}
