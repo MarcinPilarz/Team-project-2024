@@ -9,8 +9,8 @@ function Navigation() {
         <li>O nas</li>
         <li>Oferta</li>
         <li>Kontakt</li>
-        <li>Zaloguj</li>
-        <li>Zarejestruj</li>
+        <li className="signin-button">Zaloguj</li>
+        <li className="signup-button">Zarejestruj</li>
       </ul>
     </nav>
   );

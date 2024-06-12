@@ -4,10 +4,13 @@
   padding: 0;
   overflow: hidden;
   background-color: #543a24; /* dark brown */
+  display: flex; /* Added flex display */
+  align-items: center; /* Aligns items vertically center */
 }
 
 .navigation li {
-  float: left;
+  /* width: 100%; */
+
   display: block;
   color: white;
   text-align: center;
@@ -17,4 +20,11 @@
 
 .navigation li:hover {
   background-color: #111;
+  cursor: pointer;
+}
+/* Naprawić */
+li.signin-button,
+li.signup-button {
+  margin-left: 10%; /* This pushes both buttons to the right */
+  left: 600px;
 }

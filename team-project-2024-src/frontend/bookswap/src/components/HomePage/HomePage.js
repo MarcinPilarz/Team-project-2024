@@ -3,6 +3,7 @@ import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
 import "../HomePage/HomePage.css";
 import AboutUsSection from "./AboutUsSection";
+import BestMentioning from "./BestMentioning";
 const HomePage = () => {
   return (
     <div className="app">
@@ -19,10 +20,12 @@ const HomePage = () => {
           {/* <aside>
           <p>Check out the most popular books this week!</p>
         </aside> */}
+          <BestMentioning />
         </article>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
+    /* <Footer /> */
   );
 };
 
