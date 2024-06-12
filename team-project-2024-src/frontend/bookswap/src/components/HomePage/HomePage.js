@@ -17,10 +17,8 @@ const HomePage = () => {
       <main className="app-main">
         <article>
           <AboutUsSection />
-          {/* <aside>
-          <p>Check out the most popular books this week!</p>
-        </aside> */}
-          {/* <BestMentioning /> */}
+
+          <BestMentioning />
         </article>
       </main>
       <Footer />

@@ -1,0 +1,90 @@
+.best-mentioning {
+  padding: 20px;
+  background-color: #f4f2d2;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  font-size: 1.2vw;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 1vw;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 2vw;
+}
+
+.user-info h3 {
+  margin: 0;
+  color: #543a24;
+  font-size: 1.5vw;
+}
+
+.user-info p {
+  font-size: 1.2vw;
+  color: #666;
+  margin-top: 0.5vw;
+}
+
+button {
+  padding: 0.8vw 1.6vw;
+  font-size: 1.2vw;
+  background-color: #543a24;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #6a4f4b;
+}
+
+@media (max-width: 600px) {
+  .best-mentioning {
+    padding: 10px;
+    max-width: 100%;
+    font-size: 4vw;
+  }
+
+  .user-profile {
+    flex-direction: column;
+
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .profile-pic {
+    width: 20vw;
+    height: 20vw;
+    margin-right: 0;
+    margin-bottom: 2vw;
+  }
+
+  .user-info h3,
+  .user-info p,
+  button {
+    font-size: 5vw;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
