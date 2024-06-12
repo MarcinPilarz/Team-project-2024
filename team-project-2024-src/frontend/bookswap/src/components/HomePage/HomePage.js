@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import "../HomePage/HomePage.css";
 import AboutUsSection from "./AboutUsSection";
 import BestMentioning from "./BestMentioning";
+import OfferSection from "./OfferSection";
 const HomePage = () => {
   return (
     <div className="app">
@@ -19,6 +20,7 @@ const HomePage = () => {
           <AboutUsSection />
 
           <BestMentioning />
+          <OfferSection />
         </article>
       </main>
       <Footer />

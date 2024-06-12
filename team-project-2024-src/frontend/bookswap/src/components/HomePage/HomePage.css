@@ -124,7 +124,7 @@ html {
   transform: translate(-50%, -50%);
   z-index: 1;
   margin: 0;
-  padding: 0 10px; /* Ensure it fits on small screens */
+  padding: 0 10px;
 }
 
 .app-main {
@@ -145,7 +145,7 @@ aside {
 aside {
   border: 2px solid #543a24;
 }
-/* Media queries for responsiveness */
+
 @media (max-width: 768px) {
   .app-header {
     height: 400px;
