@@ -1,0 +1,86 @@
+.offers-container {
+  background-color: #f4f2d2;
+  color: #543a24;
+  padding: 20px;
+  max-width: 90%;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #543a24;
+}
+
+.books-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.book-item {
+  background: #fff;
+  border: 1px solid #543a24;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Jeden kafelek na linii dla bardzo małych ekranów */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.book-cover {
+  width: 100%; /* Szerokość obrazka skaluje się wraz z szerokością kafelka */
+  max-width: 170px; /* Maksymalna szerokość obrazka */
+  height: auto;
+  border-radius: 5px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.book-info h3,
+.book-info h4 {
+  margin: 5px 0;
+  font-size: calc(12px + 0.5vw); /* Responsywne skalowanie czcionki */
+}
+
+button {
+  padding: 8px 16px;
+  margin-top: 30px;
+  background-color: #6a4f4b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+}
+
+button:hover {
+  background-color: #543a24;
+}
+
+@media (min-width: 600px) {
+  .book-item {
+    width: calc(33.333% - 10px); /* Dwa kafelki na linii dla średnich ekranów */
+  }
+}
+
+@media (min-width: 1024px) {
+  .book-item {
+    width: calc(
+      33.333% - 10px
+    ); /* Trzy kafelki na linii dla większych ekranów */
+  }
+}

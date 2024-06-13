@@ -1,0 +1,83 @@
+/* Plik: Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-header h3,
+.modal-header h4 {
+  margin: 10px 0;
+}
+
+.modal-body {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modal-book-cover {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.modal-body p {
+  margin: 5px 0;
+  font-size: calc(12px + 0.5vw);
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.modal-footer button {
+  padding: 10px 20px;
+  background-color: #6a4f4b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-footer button:hover {
+  background-color: #543a24;
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+  }
+}

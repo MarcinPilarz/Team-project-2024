@@ -1,30 +1,57 @@
+/* plik: src/components/Navigation/Navigation.css */
+.navigation {
+  background-color: #543a24; /* ciemnobrązowy */
+  padding: 0 20px; /* Dodanie paddingu do nawigacji */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 .navigation ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #543a24; /* dark brown */
-  display: flex; /* Added flex display */
-  align-items: center; /* Aligns items vertically center */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Rozdziela elementy na początku i końcu */
+  width: 100%;
 }
 
 .navigation li {
-  /* width: 100%; */
-
-  display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 0px; /* Zmniejszony padding z boków */
   text-decoration: none;
+  transition: background-color 0.3s; /* Animacja dla efektu hover */
 }
 
 .navigation li:hover {
-  background-color: #111;
+  background-color: #111; /* Ciemniejszy kolor tła przy najechaniu */
   cursor: pointer;
 }
-/* Naprawić */
-li.signin-button,
-li.signup-button {
-  margin-left: 10%; /* This pushes both buttons to the right */
-  left: 600px;
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.auth-buttons li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .navigation ul {
+    flex-direction: column; /* Układ pionowy na małych ekranach */
+    align-items: flex-start;
+  }
+
+  .auth-buttons {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px; /* Dodatkowy margines na górze dla przycisków */
+  }
+
+  .auth-buttons li {
+    padding: 10px 0; /* Mniejszy padding dla lepszej responsywności */
+  }
 }

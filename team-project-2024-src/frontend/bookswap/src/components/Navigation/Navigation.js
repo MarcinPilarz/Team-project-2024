@@ -1,16 +1,23 @@
 import React from "react";
-//import '../styles/Navigation.css';
 import "../Navigation/Navigation.css";
+
 function Navigation() {
   return (
     <nav className="navigation">
       <ul>
-        <li>Strona główna</li>
-        <li>O nas</li>
-        <li>Oferta</li>
-        <li>Kontakt</li>
-        <li className="signin-button">Zaloguj</li>
-        <li className="signup-button">Zarejestruj</li>
+        {/* Elementy nawigacyjne i przyciski logowania/rejestracji są w jednym rzędzie, ale rozdzielone */}
+        {/* <div className="nav-options"> */}
+        <li className="nav-option">Strona główna</li>
+        <li className="nav-option">O nas</li>
+        <li className="nav-option">Oferta</li>
+        <li className="nav-option">Kontakt</li>
+        {/* </div> */}
+        <div className="auth-buttons">
+          {" "}
+          {/* Przeniesienie przycisków na koniec listy */}
+          <li className="signin-button">Zaloguj</li>
+          <li className="signup-button">Zarejestruj</li>
+        </div>
       </ul>
     </nav>
   );
