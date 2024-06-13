@@ -1,0 +1,45 @@
+package com.springboot.bookswap.service;
+
+import java.util.List;
+
+import com.springboot.bookswap.Books;
+
+public class BookService implements MainService<Books> {
+
+	@Override
+	public List<Books> findAllItems() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addItem(Books object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteItem(Books object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateItem(Books object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Books findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Books findByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
