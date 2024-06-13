@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Modal.css"; // Załącz plik stylów dla modalu
+import TradeProposal from "../Trade/TradeProposal";
+import { userBooksMock } from "../../data/userBooksMock";
+// Załóżmy, że mamy taki komponent
 
-const Modal = ({ book, isOpen, onClose }) => {
-  if (!isOpen) return null;
+const Modal = ({ book, isOpen, onClose, userBooks }) => {
+  const [showTradeProposal, setShowTradeProposal] = useState(false);
 
   // Funkcja do zamykania modalu, gdy kliknięto poza jego zawartością
   const handleBackgroundClick = (e) => {
@@ -10,6 +13,23 @@ const Modal = ({ book, isOpen, onClose }) => {
       onClose();
     }
   };
+
+  const handleStartTrade = () => {
+    setShowTradeProposal(true);
+  };
+
+  const handleCloseTradeProposal = () => {
+    setShowTradeProposal(false);
+    onClose();
+  };
+
+  const handleConfirmTrade = (selectedBook) => {
+    console.log("Trade confirmed:", selectedBook.title);
+    setShowTradeProposal(false);
+    onClose();
+  };
+
+  if (!isOpen) return null; // Przesunięte tutaj, po wszystkich wywołaniach hooków
 
   return (
     <div className="modal-overlay" onClick={handleBackgroundClick}>
@@ -32,13 +52,18 @@ const Modal = ({ book, isOpen, onClose }) => {
           </p>
         </div>
         <div className="modal-footer">
-          <button onClick={() => alert("Rozpoczynanie wymiany...")}>
-            Zaproponuj wymianę
-          </button>
+          <button onClick={handleStartTrade}>Zaproponuj wymianę</button>
           <button onClick={() => alert("Rozpoczynanie rozmowy...")}>
             Rozmowa z użytkownikiem
           </button>
         </div>
+        {showTradeProposal && (
+          <TradeProposal
+            userBooks={userBooksMock} // Upewnij się, że jest to tablica
+            onConfirm={handleConfirmTrade}
+            onCancel={handleCloseTradeProposal}
+          />
+        )}
       </div>
     </div>
   );
