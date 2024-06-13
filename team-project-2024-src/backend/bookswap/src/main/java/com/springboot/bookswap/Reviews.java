@@ -32,4 +32,46 @@ public class Reviews {
 	
 	@ManyToMany(mappedBy = "reviews")
     private List<Users> users;
+
+	public long getReviewID() {
+		return ReviewID;
+	}
+
+	public void setReviewID(long reviewID) {
+		ReviewID = reviewID;
+	}
+
+	public int getRating() {
+		return rating;
+	}
+
+	public void setRating(int rating) {
+		this.rating = rating;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public Date getReviewDate() {
+		return reviewDate;
+	}
+
+	public void setReviewDate(Date reviewDate) {
+		this.reviewDate = reviewDate;
+	}
+
+	public List<Users> getUsers() {
+		return users;
+	}
+
+	public void setUsers(List<Users> users) {
+		this.users = users;
+	}
+	
+	
 }

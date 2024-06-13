@@ -29,5 +29,47 @@ public class Notifications {
 	@ManyToOne
 	@JoinColumn(name = "UserID")
 	private Users user;
+
+	public long getNotificationID() {
+		return NotificationID;
+	}
+
+	public void setNotificationID(long notificationID) {
+		NotificationID = notificationID;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public boolean isDataReceived() {
+		return dataReceived;
+	}
+
+	public void setDataReceived(boolean dataReceived) {
+		this.dataReceived = dataReceived;
+	}
+
+	public Users getUser() {
+		return user;
+	}
+
+	public void setUser(Users user) {
+		this.user = user;
+	}
+	
+	
 	
 }

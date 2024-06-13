@@ -1,0 +1,32 @@
+package com.springboot.bookswap.controller;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.springboot.bookswap.controller.dto.UsersDto;
+import com.springboot.bookswap.service.UsersService;
+
+@RestController
+public class UsersController {
+	
+	@Autowired
+	private UsersService usersService;
+	
+	@GetMapping("/users")
+	public List<UsersDto> getUsersDto(){
+		return usersService.findAllItems().stream()
+				.map(users -> new UsersDto(
+						users.getUserID(),
+						users.getFirstName(),
+						users.getLastName(),
+						users.getEmail(),
+						users.getPassword(),
+						users.getShippingAddress(),
+						users.getPhoneNumber()))
+				.collect(Collectors.toList());
+	}
+}

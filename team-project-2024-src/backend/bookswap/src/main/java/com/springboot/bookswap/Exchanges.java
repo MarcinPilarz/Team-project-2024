@@ -29,4 +29,38 @@ public class Exchanges {
 	
 	@ManyToMany(mappedBy = "exchanges")
     private List<Users> users;
+
+	public long getExchangeID() {
+		return ExchangeID;
+	}
+
+	public void setExchangeID(long exchangeID) {
+		ExchangeID = exchangeID;
+	}
+
+	public Date getExchangeDate() {
+		return exchangeDate;
+	}
+
+	public void setExchangeDate(Date exchangeDate) {
+		this.exchangeDate = exchangeDate;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public List<Users> getUsers() {
+		return users;
+	}
+
+	public void setUsers(List<Users> users) {
+		this.users = users;
+	}
+	
+	
 }
