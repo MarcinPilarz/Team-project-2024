@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./OffersPage.css"; // Styl dla ofert
+import "./OffersPage.css";
 import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
 import Modal from "./Modal";
@@ -68,7 +68,7 @@ const OffersPage = () => {
           book={selectedBook}
           isOpen={isModalOpen}
           onClose={handleCloseModal}
-          userBooks={selectedBook} // Przekazywanie wybranej książki jako "userBooks"
+          userBooks={selectedBook}
         />
       )}
     </div>
