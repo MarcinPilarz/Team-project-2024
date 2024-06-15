@@ -1,0 +1,5 @@
+package com.springboot.bookswap.repository;
+
+public interface BooksRepository {
+
+}
