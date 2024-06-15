@@ -1,0 +1,56 @@
+.offer-section {
+  background-color: #f4f2d2;
+  color: #543a24;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 80%;
+  font-size: 1.2vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer-section h2 {
+  font-size: 2.5vw;
+  margin-bottom: 20px;
+}
+
+.offer-section p {
+  font-size: 1.5vw;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.offer-section button {
+  padding: 1vw 2vw;
+  font-size: 1.5vw;
+  background-color: #543a24;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.offer-section button:hover {
+  background-color: #6a4f4b;
+}
+
+@media (max-width: 600px) {
+  .offer-section {
+    font-size: 5vw;
+  }
+
+  .offer-section h2 {
+    font-size: 8vw;
+  }
+
+  .offer-section p {
+    font-size: 6vw;
+  }
+
+  .offer-section button {
+    font-size: 6vw;
+    padding: 3vw 6vw;
+  }
+}
