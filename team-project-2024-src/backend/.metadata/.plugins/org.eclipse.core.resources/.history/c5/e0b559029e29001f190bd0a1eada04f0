@@ -1,0 +1,45 @@
+package com.springboot.bookswap.service;
+
+import java.util.List;
+
+import com.springboot.bookswap.Users;
+
+public class UsersService implements MainService<Users> {
+
+	@Override
+	public List<Users> findAllItems() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addItem(Users object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteItem(Users object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateItem(Users object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Users findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Users findByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

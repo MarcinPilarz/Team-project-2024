@@ -1,0 +1,42 @@
+.aboutus {
+  background-color: #f4f2d2;
+  color: #543a24;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 80%;
+  font-size: 1.2vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h2-aboutus h2 {
+  font-size: 2.5vw;
+  margin-bottom: 20px;
+}
+
+.about p {
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 79%;
+  padding: 0 20px;
+}
+
+.about ul {
+  text-align: left;
+  padding-left: 40px;
+}
+
+@media (max-width: 600px) {
+  .aboutus {
+    font-size: 4vw;
+  }
+
+  .h2-aboutus h2 {
+    font-size: 8vw;
+  }
+
+  .about p {
+    font-size: 5vw;
+  }
+}
